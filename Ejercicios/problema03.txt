@@ -1,0 +1,24 @@
+1.Inicio
+
+2.(notas(3)(4), d[0-n])
+3.notas <--- { {9, 10, 7, 8}, {10, 5, 7, 9}, {7, 9.4, 10, 9} }
+4.(estudiantes(3), x(40) [{A-Z}, {a-z}, {BS})
+5.estudiantes <--- { {Jerry Ponce, Gabriela Lewis, David Bell} }
+6.filas, i[0-n]
+7.columnas, i[0-n]
+8.indice, i[0-n]
+9.suma, i[0-n]
+10.cadena <--- ""
+
+11.Para(filas <--- 0, filas < 3, 1)
+	12.indice <-- filas
+	13.suma <-- 0
+	14.Para(columnas <--- 0, columnas < 4, 1)
+		15.suma <-- suma + notas(filas)(columnas)
+	16.Fin_Para
+	17.cadena <-- cadena + "Estudiante: " + estudiantes(indice) + " tiene un promedio de " + suma + "\n"
+18.Fin_Para
+
+19.Escribir cadena
+
+20.Fin

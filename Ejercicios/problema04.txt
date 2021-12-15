@@ -1,0 +1,22 @@
+1.Inicio
+
+2.(ventas(3)(4), d[0-n])
+3.(vendedores(3), x(40) [{A-Z}, {a-z}, {BS})
+5.vendedores <--- { {Jerry Ponce, Gabriela Lewis, David Bell} }
+6.filas, i[0-n]
+7.columnas, i[0-n]
+8.indice, i[0-n]
+9.suma, i[0-n]
+10.cadena <--- ""
+
+11.Para(filas <--- 0, filas < 2, 1)
+	12.indice <-- filas
+	14.Para(columnas <--- 0, columnas < 5, 1)
+		15.suma <-- suma + ventas(filas)(columnas)
+	16.Fin_Para
+	17.cadena <-- cadena + "Vendedor(a): " + vendedores(indice) + "\n"
+18.Fin_Para
+
+19.Escribir cadena + " Ha realizado un total de " + suma + " en ventas."
+
+20.Fin
